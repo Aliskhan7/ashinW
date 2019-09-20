@@ -48,6 +48,15 @@ $(document).ready(function(){
     });
 
 
+
+    $('#btn-search').click(function() {
+        $('#input-search').slideToggle();
+    });
+
+
+
+
+
     // $(function() {
     //     $("ul.tabs__caption").on("click", "li:not(.active)", function() {
     //         $(this)

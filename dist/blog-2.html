@@ -13,19 +13,26 @@
     <title>Alshin West</title>
 </head>
 <body>
-<main>
+<header>
     <div class="bg">
         <div class="container">
             <div class="top-menu row">
                 <div class="top-menu__left col-lg-6">
                     <span>FAQ</span>
                     <p>Обратная связь</p>
-                    <img src="img/search.png" alt="">
+                    <form>
+                        <input type="text" id="input-search" name="search" placeholder="Поиск...">
+                        <button type="button" id="btn-search"><img src="img/search.png" alt=""></button>
+                    </form>
                 </div>
                 <div class="top-menu__right col-lg-6">
-                    <span>Русский</span>
+                    <select name="" id="">-->
+                        <option value="">Русский</option>
+                        <option value="">Английский</option>
+                        <option value="">Казахский</option>
+                    </select>
                     <img src="img/vector.png" alt="">
-                    <p>Авторизация</p>
+                    <a data-toggle="modal" data-target="#exampleModal">Авторизация</a>
                 </div>
             </div>
         </div>
@@ -72,7 +79,6 @@
             </div>
         </div>
     </div>
-
     <!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
@@ -97,90 +103,7 @@
             </div>
         </div>
     </div>
-
-    <div class="container-fluid">
-        <div class="row content">
-            <div class="col-12-lg owl-carousel slide-one">
-                <div class="slide">
-                    <div class="slide-block">
-                        <div class="bg_img">
-                            <div class="bg-chadow"></div>
-                            <img src="img/bg.png" alt="bg">
-                        </div>
-                        <div class="container">
-                            <div class="slide-block__text">
-                                <h1>Компетентность.
-                                    Надежность. Успех.</h1>
-                                <p>Наш сервисный центр ремонтирует электродвигатели любых
-                                    марок и видов. Мы специализируемся на всех
-                                    видах обслуживания: техническом обслуживании,
-                                    проведении текущего и капитального ремонта.</p>
-                                <button type="button" class="btn btn_enter" data-toggle="modal" data-target="#exampleModal">
-                                    Подробнее</button>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="slide">
-                    <div class="slide-block">
-                        <div class="bg_img">
-                            <div class="bg-chadow"></div>
-                            <img src="img/bg.png" alt="bg">
-                        </div>
-                        <div class="container">
-                            <div class="slide-block__text">
-                                <h1>Компетентность.
-                                    Надежность. Успех.</h1>
-                                <p>Наш сервисный центр ремонтирует электродвигатели любых
-                                    марок и видов. Мы специализируемся на всех
-                                    видах обслуживания: техническом обслуживании,
-                                    проведении текущего и капитального ремонта.</p>
-                                <button type="button" class="btn btn_enter" data-toggle="modal" data-target="#exampleModal">
-                                    Подробнее</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="slide">
-                    <div class="slide-block">
-                        <div class="bg_img">
-                            <div class="bg-chadow"></div>
-                            <img src="img/bg.png" alt="bg">
-                        </div>
-                        <div class="container">
-                            <div class="slide-block__text">
-                                <h1>Компетентность.
-                                    Надежность. Успех.</h1>
-                                <p>Наш сервисный центр ремонтирует электродвигатели любых
-                                    марок и видов. Мы специализируемся на всех
-                                    видах обслуживания: техническом обслуживании,
-                                    проведении текущего и капитального ремонта.</p>
-                                <button type="button" class="btn btn_enter" data-toggle="modal" data-target="#exampleModal">
-                                    Подробнее</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="dots container">
-                <div id="counter"></div>
-                <div class="controls">
-                    <div class="arrow" id="left">
-                        <img src="img/left-arrow.png" alt="">
-                    </div>
-                    <div class="arrow" id="right">
-                        <img src="img/right-arrow.png" alt="">
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-</main>
+</header>
 <section>
     <div class="bg">
         <div class="container container-blog">

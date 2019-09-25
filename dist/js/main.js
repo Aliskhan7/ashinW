@@ -55,34 +55,6 @@ $(document).ready(function(){
 
 
 
-
-
-    // $(function() {
-    //     $("ul.tabs__caption").on("click", "li:not(.active)", function() {
-    //         $(this)
-    //             .addClass("active")
-    //             .siblings()
-    //             .removeClass("active")
-    //             .closest("div.tabs")
-    //             .find("div.tabs__content")
-    //             .removeClass("active")
-    //             .eq($(this).index())
-    //             .addClass("active");
-    //     });
-    // });
-    // $(function() {
-    //     $("ul.tabs__caption-company").on("click", "li:not(.active)", function() {
-    //         $(this)
-    //             .addClass("active")
-    //             .siblings()
-    //             .removeClass("active")
-    //             .closest("div.tabs")
-    //             .find("div.tabs__content-company")
-    //             .removeClass("active")
-    //             .eq($(this).index())
-    //             .addClass("active");
-    //     });
-    // });
     (function($) {
         $(function() {
             $("ul.tabs__caption").on("click", "li:not(.active)", function() {
@@ -98,52 +70,6 @@ $(document).ready(function(){
             });
         });
     })(jQuery);
-
-
-
-
-    // function initMap() {
-    //     var coordinates = {lat: 47.106601, lng: 51.888808},
-    //
-    //         map = new google.maps.Map(document.getElementById('map'), {
-    //             center: coordinates
-    //         });
-    //     var coordinates = {lat: 47.106601, lng: 51.888808},
-    //
-    //         map = new google.maps.Map(document.getElementById('map'), {
-    //             center: coordinates
-    //         }),
-    //
-    //         marker = new google.maps.Marker({
-    //             position: coordinates,
-    //             map: map
-    //         });
-    //     var coordinates = {lat: 47.106601, lng: 51.888808},
-    //
-    //         map = new google.maps.Map(document.getElementById('map'), {
-    //             center: coordinates
-    //         }),
-    //
-    //         marker = new google.maps.Marker({
-    //             position: coordinates,
-    //             map: map,
-    //             animation: google.maps.Animation.BOUNCE
-    //         });
-    //     google.maps.event.addListener(infowindow,'closeclick',function(){
-    //         marker.setAnimation(google.maps.Animation.BOUNCE);
-    //     });
-    //
-    //     marker.addListener('click', function () {
-    //         marker.setAnimation(null);
-    //     });
-    //     image = '../img/marker.png',
-    //         marker = new google.maps.Marker({
-    //             position: coordinates,
-    //             map: map,
-    //             icon: image
-    //         });
-    // }
-
 });
 
 (function(){

@@ -1512,20 +1512,8 @@ footer .bg-dark-footer {
   font-size: 36px;
   color: #141414; }
 
-.map {
+#map {
   width: 1170px;
   height: 600px;
-  overflow: hidden;
-  position: relative;
-  border-radius: 10px;
-  margin-bottom: 130px; }
-  .map__wrap {
-    height: 145%;
-    width: 100%;
-    border: 0;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 1; }
+  padding: 0;
+  margin-bottom: 120px; }

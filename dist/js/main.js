@@ -9,11 +9,11 @@ $(document).ready(function(){
         margin:30,
         smartSpeed:450,
         loop: true,
-        onInitialized  : counter, //When the plugin has initialized.
+        onInitialized  : counter,
         onTranslated : counter
     });
 
-    $(".slide-two").owlCarousel({ //добавлен этот скрипт
+    $(".slide-two").owlCarousel({
         items:9,
         smartSpeed:450,
         loop: true,
@@ -35,9 +35,9 @@ $(document).ready(function(){
 
 
     function counter(event) {
-        var element   = event.target;         // DOM element, in this example .owl-carousel
-        var items     = event.item.count;     // Number of items
-        var item      = event.item.index - 1;     // Position of the current item
+        var element   = event.target;
+        var items     = event.item.count;
+        var item      = event.item.index - 1;
         $('#counter').html('<span style="color:#fff;">0'+item+"</span> / "+"0"+items)
     }
 
@@ -133,47 +133,21 @@ $(document).ready(function(){
     }
 })();
 
-var GM = {
-    init: function () {
-        this.initCache();
-        this.initMap();
-    },
-
-    initCache: function() {
-        this.$popupContent = $('.js-marker-content');
-    },
-
-    initMap: function () {
-        var coordinates = {lat: 47.106561, lng: 51.888614},
-            popupContent = this.$popupContent.html(),
-            markerImage = './img/marker2.png',
-            zoom = 15,
-
-            map = new google.maps.Map(document.getElementById('map'), {
-                center: coordinates,
-                zoom: zoom,
-                disableDefaultUI: true,
-                scrollwheel: false
-            }),
-
-            infowindow = new google.maps.InfoWindow({
-                content: popupContent
-            }),
-
-            marker = new google.maps.Marker({
-                position: coordinates,
-                map: map,
-                icon: markerImage
-            });
-
-
-    }
-};
-
-$(document).ready(function() {
-    GM.init();
-});
-
-
-
-
+ ymaps.ready(function(){
+     var e=new ymaps.Map("map",{center:[47.106583, 51.888593],
+         zoom:16
+     },{
+         searchControlProvider:"yandex#search"
+     }),
+         a=(ymaps.templateLayoutFactory.createClass(
+             '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+         ),
+             new ymaps.Placemark(e.getCenter(),{
+                 hintContent:"Собственный значок метки",balloonContent:"Это красивая метка"
+             },{
+                 iconLayout:"default#image",
+                 iconImageHref:"./img/marker.png",
+                 iconImageSize:[65,79],
+                 iconImageOffset:[-30,-39]
+             }));
+     e.geoObjects.add(a)});

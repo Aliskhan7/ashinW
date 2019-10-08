@@ -68,9 +68,12 @@ $font:           'Noto Sans', sans-serif;
     }
   }
 }
-.breadcrumb-item{
-  a{
-    color: #a6a6a6;
+.breadcrumb{
+  margin-bottom: 0;
+  &-item{
+    a{
+      color: #a6a6a6;
+    }
   }
 }
 
@@ -407,7 +410,7 @@ header{
     position: relative;
 
     border-width: 2px 2px 0;
-    border-radius: 5px 5px 0 0;
+
     text-align: center;
   }
   .tabs__caption-company li:not(.active) {
@@ -415,10 +418,12 @@ header{
   }
   .tabs__caption-company li:not(.active):hover {
     color: $brown;
+    background: transparent;
     border-bottom: 1px solid $brown;
+    box-shadow: none;
   }
   .tabs__caption-company .active {
-    background: #FFF;
+    box-shadow: none;
     border-bottom: 1px solid $brown;
     color: $brown;
   }
@@ -430,7 +435,7 @@ header{
     right: 0;
     height: 5px;
     border-bottom: 1px solid $brown;
-    background: #FFF;
+    background: transparent;
   }
 
   .tabs{
@@ -480,6 +485,7 @@ header{
   }
   .tabs__content-company.active {
     display: flex;
+    margin-bottom: 80px;
   }
 }
 
@@ -910,6 +916,17 @@ footer{
       }
     }
   }
+  .logo-block{
+    margin: 30px 0;
+  }
+  .navbar-logo{
+    display: flex;
+
+    align-items: center;
+    &__title{
+      color: #fff;
+    }
+  }
 }
 
 //Страница О компании
@@ -1145,7 +1162,7 @@ footer{
     color: #a6a6a6;
     margin-bottom: 4px;
   }
-  p{
+  p, a{
     font-size: 16px;
     font-weight: 900;
   }

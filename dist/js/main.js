@@ -17,7 +17,7 @@ $(document).ready(function(){
         items:9,
         smartSpeed:450,
         loop: true,
-        margin: 60,
+        margin: 30,
         responsive:{
             0:{
                 items:1,
@@ -27,6 +27,9 @@ $(document).ready(function(){
                 items:5
             },
             1000:{
+                items:5
+            },
+            1400:{
                 items:9
             }
         }
